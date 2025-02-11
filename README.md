@@ -10,7 +10,7 @@
 
 ## Chirper
 
-Chirper é um aplicativo simples desenvolvido em Laravel utilizando Blade, seguindo as instruções do [Laravel Bootcamp](https://bootcamp.laravel.com/blade/installation). Este projeto demonstra funcionalidades essenciais de um microblog, onde os usuários podem criar, visualizar, editar e deletar "chirps" (mensagens curtas), além de implementar notificações e eventos para uma experiência interativa.
+Chirper é um aplicativo simples desenvolvido em Laravel utilizando Blade, seguindo as instruções do [Laravel Bootcamp](https://bootcamp.laravel.com/blade/installation). Este projeto demonstra funcionalidades essenciais de um microblog, onde os usuários podem criar, visualizar, editar e deletar "chirps" (mensagens curtas). As notificações e eventos são registrados em um arquivo de log (`storage/logs/laravel.log`) e são disparados apenas quando um novo chirp é criado. Para testar essa funcionalidade, certifique-se de utilizar pelo menos duas contas de usuário.
 
 ## Requisitos
 
@@ -32,7 +32,7 @@ Chirper é um aplicativo simples desenvolvido em Laravel utilizando Blade, segui
     npm install
     ```
 
-3. **Copie o arquivo `.env.exemple` e configure o arquivo `.env` com as credenciais do banco de dados.**
+3. **Copie o arquivo `.env.exemple` e configure o arquivo `.env` com as credenciais do banco de dados e o log de notificações.**
     ```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
@@ -40,6 +40,9 @@ Chirper é um aplicativo simples desenvolvido em Laravel utilizando Blade, segui
     DB_DATABASE=nome_do_banco
     DB_USERNAME=seu_usuario
     DB_PASSWORD=sua_senha
+    ```
+    ```bash
+    MAIL_MAILER=log
     ```
 
 4. **Gere a chave da aplicação:**
@@ -57,12 +60,17 @@ Chirper é um aplicativo simples desenvolvido em Laravel utilizando Blade, segui
    npm run dev
    ```
 
-6. Inicie o servidor:
+7. **Inicie o Worker da Queue (processa os jobs enfileirados pela aplicação)**
+    ```bash
+    php artisan queue:work
+    ```
+
+8. **Inicie o servidor:**
    ```bash
    php artisan serve
    ```
 
-7. Acesse no navegador:
+9. **Acesse no navegador:**
    ```bash
    http://localhost:8000
    ```
