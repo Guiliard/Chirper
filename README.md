@@ -86,9 +86,9 @@ Chirper é um aplicativo simples desenvolvido em Laravel utilizando Livewire, se
 
 ## Referências
 
-[1] LARAVEL BOOTCAMP - Tutorial Laravel Bootcamp (Livewire). Disponível em: <https://bootcamp.laravel.com/livewire/installation>. Acessado em: 05 de Feevereiro de 2025.
+[1] LARAVEL BOOTCAMP - Tutorial Laravel Bootcamp (Livewire). Disponível em: <https://bootcamp.laravel.com/livewire/installation>. Acessado em: 05 de Fevereiro de 2025.
 
-[2] LARAVEL - Laravel Documentation. Disponível em: <https://laravel.com/docs/11.x/readme>. Acessado em: 05 de Feevereiro de 2025.
+[2] LARAVEL - Laravel Documentation. Disponível em: <https://laravel.com/docs/11.x/readme>. Acessado em: 05 de Fevereiro de 2025.
 
 [3] PHP - PHP Documentation. Disponível em: <https://www.php.net/docs.php>. Acessado em: 28 de Janeiro de 2025.
 
